@@ -1,7 +1,7 @@
 This is my first [Next.js](https://nextjs.org) web application
 
 ## To run the app locally
-- First , create a .env file and add your API_KEY to it
+- First , create a .env file and add your API_KEY (for the ipify API) and your token (for fast-api-speedtest API) to it
 - Next , install dependencies using :
 ```bash 
 npm install
@@ -11,7 +11,7 @@ npm install
 npm run build
 npm run dev
 ```
-- Open [http://localhost:3000](http://localhost:3000) with your browser to see the application , or visit this [http://www.reseau4thewin.com](link)
+- Open [http://localhost:3000](http://localhost:3000) with your browser to test the application 
 
 ## What functionnalities does the website offer ?
 
@@ -23,7 +23,12 @@ The website was mainly developped to show you your public ip address as well as 
 ## used public APIs
 
 - I used [https://geo.ipify.org/docs](ipify) for getting both personnal ip address and searched ip address relative information .
-- I am still looking for a public internet speed API , if you know any , please contact me .
+- I am still looking for a better public internet speed API , if you know any , please contact me .
+
+## Deployment
+Yet to work on
 
 ## Contact me
 using this email address : ms_chattah@esi.dz
+
+
