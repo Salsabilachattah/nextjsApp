@@ -43,7 +43,7 @@
 }
 
 .ip-panel ul li strong {
-  color: #006A67; 
+  color: #444; 
   flex: 1;
   text-align: left;
   font-size: 1.3rem;
@@ -52,6 +52,6 @@
 .ip-panel ul li span {
   flex: 1;
   text-align: right;
-  color: #006A67; 
+  color: #444; 
   font-size: 1.3rem;
 }

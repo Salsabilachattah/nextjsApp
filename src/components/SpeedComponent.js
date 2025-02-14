@@ -6,10 +6,11 @@ export default function SpeedComponent({ data , type}) { /*upload or download */
   return (
     <div className="speed-panel" >
         <div className="circle">
-          <h1 >{type === "upload" ? <p>{data[0]}</p> : <p>{data[1]}</p>}</h1> 
-            <h4>Mbps</h4>
+          {!data ? <div className="loader"></div>
+           : <h1 >{type === "upload" ? <p></p> : <p>{data.toString().substring(0, 5)}</p>}</h1> }
+          {data ? <h4>Mbps</h4> : <></>}
         </div>
-      <h2>{type}</h2>
+      {/* <h2>{}</h2> */}
     </div>
   )
 }

@@ -1,6 +1,11 @@
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
 input {
-
-   
     padding-left:5%;
     box-sizing: border-box;
     height: 90%;
@@ -12,18 +17,32 @@ input {
     font-size: 100%;
     color : #006A67;
 }
+input:focus {
+    border: none; /* Remove the border when the input is focused */
+    outline: none; /* Remove the outline when the input is focused */
+}
+.search-bar.private-bar {
+    border: 2px solid red; /* Add a red border for the entire search-bar element */
+    animation: shake 0.5s; /* Apply the shake animation */
+
+}
 .search-bar { 
     display: flex;
     flex-direction: row;
-    margin-top: 1%;
-    width: 25%;
+    justify-content: space-between; 
+    align-items: center;
+    width: 20%;
     height: 80%;
-}
+    background-color: #CEE1E0;
 
-.search-bar img {
-    width: 100%;
+}
+.search-button {
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+.search-button img {
+    width: 50%;
     height: 50%;
-    /* padding-top: 30%; */
-    margin-left: -13rem;
-    margin-top: 1.3rem;
 }

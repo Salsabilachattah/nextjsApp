@@ -9,7 +9,7 @@ export default async function handler(req, res) {
 
     const speedtest = new FastSpeedtest({
         token: token, 
-        verbose: true, // default: false
+        verbose: false, // the variation of download speed.
         timeout: 5000, 
         https: true, 
         urlCount: 5, // default: 5 
@@ -21,7 +21,7 @@ export default async function handler(req, res) {
         // console.log(`Speed: ${speed} Mbps`);
         res.status(200).json({ speed });
     } catch (error) {
-        console.error(error.message);
+        // console.error(error.message);
         res.status(500).json({ error: error.message });
     }
 }

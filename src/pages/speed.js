@@ -8,30 +8,29 @@ import './styles.css';
 const handleSpeedData = async (setSpeedData) => {
   try {
     const response = await fetch('/api/speedTest');
-    console.log(response);
     const data = await response.json();
-    setSpeedData([data.uploadSpeed, data.downloadSpeed]);
+    const speed = data.speed;
+    setSpeedData(speed); 
   } catch (e) {
     console.error('Error fetching speed data:', e.message);
   }
 };
 
-
 export default function Bandwidth() {
-    const data = [10, 20];
-    const [speedData, setSpeedData] = useState([0, 0]); // [uploadSpeed, downloadSpeed]
+    const [speedData, setSpeedData] = useState(0); // [uploadSpeed, downloadSpeed]
+
     useEffect(() => {
       handleSpeedData(setSpeedData);
-    }, []);
-    console.log(speedData);
+    }, []); // Empty dependency array ensures this runs only once
+   console.log(speedData);
     return (
     <div className="bandwidth">
       <Navbar />
       <div className="outer-speed-container">
-      <h3> your internet speed : </h3>
+      <h3> your download speed : </h3>
       <div className="speed-container">
-        <SpeedComponent data={data} type="download" />
-        <SpeedComponent data={data} type="upload" />
+        <SpeedComponent data={speedData} type="download" />
+        {/* <SpeedComponent data={data} type="upload" /> this was supposed to be another functionality */}
       </div>
       </div>
       <Footer />

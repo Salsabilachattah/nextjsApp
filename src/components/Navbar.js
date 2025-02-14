@@ -2,12 +2,14 @@ import React from 'react';
 import Link from 'next/link';
 import SearchBar from './SearchBar';
 import './Navbar.css';
+import { useRouter } from 'next/router';
 
 export default function Navbar({onSearch}) {
+  const router = useRouter();
   return (
     <nav className="navbar-container">
       <h1>reseau4thewin</h1>
-      <SearchBar onSearch={onSearch}/>
+    {router.pathname === '/' && <SearchBar onSearch={onSearch} />}
       <ul>
         <li>
           <Link href="/" legacyBehavior>

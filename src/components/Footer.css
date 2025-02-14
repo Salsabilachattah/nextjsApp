@@ -12,9 +12,8 @@
   
   .footer p {
     margin: 0; /* Remove default margin */
-    font-size: 14px; /* Set a smaller font size */
+    font-size: 120%; /* Set a smaller font size */
     color : white; 
-    -webkit-text-stroke: 0px; /* 2px is the stroke width, and black is the stroke color */
  }
   
   .social-icons {
@@ -22,14 +21,15 @@
   }
   
   .social-icons a {
-    margin: 0 10px; /* Space out the icons */
+    padding-top: 10%;
+    padding-left:1%;
     color: white; /* Set icon color to white */
-    font-size: 24px; /* Make icons bigger */
     text-decoration: none; /* Remove underline */
     transition: color 0.3s ease; /* Smooth color transition on hover */
   }
   
  img { 
     width: 2%;
+    height: 2%;
   }
 
