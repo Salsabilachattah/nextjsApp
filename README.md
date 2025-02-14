@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) web application
+This is my first [Next.js](https://nextjs.org) web application
 
 ## To run the app locally
 - First , add your API_KEY to .env
@@ -7,19 +7,19 @@ This is a [Next.js](https://nextjs.org) web application
 npm run build
 npm run dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the application , or visit this [http://www.reseau4thewin.com](link)
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the application , or visit this [http://www.reseau4thewin.com](link)
 
 ## What functionnalities does the website offer ?
 
 The website was mainly developped to show you your public ip address as well as some relevant information , but you can also use it to :
+
 - Search for any given public ip address .
-- Test your internet speed .
+- Test your internet speed , both upload and download.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## used public APIs
 
-## Deploy on Vercel
+- I used [https://geo.ipify.org/docs](ipify) for getting both personnal ip address and searched ip address relative information .
+- I am still looking for a public internet speed API , if you know any , please contact me .
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact
+using this email address : ms_chattah@esi.dz
