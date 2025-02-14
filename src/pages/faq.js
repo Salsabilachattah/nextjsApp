@@ -8,7 +8,10 @@ export default function Faq() {
   return (
     <div className="faq">
       <Navbar />
-      <Question />
+      <div className='faq-container'>
+        <Question />
+        </div>
+      
       <Footer />
     </div>
   );

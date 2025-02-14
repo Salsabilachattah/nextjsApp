@@ -6,10 +6,10 @@ return (
     <div className="footer">
             <p>© 2021 Reseau4TheWin</p>
             <div className="social-icons">
-                    <a className="icon" href="https://github.com/your-profile" >
+                    <a className="icon" href="https://github.com/Salsabilachattah/" >
                             <img src='/icons8-github-50.png' alt="github" />
                     </a>
-                    <a className="icon" href="https://www.linkedin.com/in/your-profile" >
+                    <a className="icon" href="https://www.linkedin.com/in/salsabila-chattah" >
                             <img src='/icons8-linkedin-50.png' alt="linkedin" />
                     </a>
                     <a className="icon" href="https://discord.com/invite/your-invite-code" >

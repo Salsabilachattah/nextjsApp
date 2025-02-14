@@ -3,11 +3,11 @@ import Link from 'next/link';
 import SearchBar from './SearchBar';
 import './Navbar.css';
 
-export default function Navbar() {
+export default function Navbar({onSearch}) {
   return (
     <nav className="navbar-container">
       <h1>reseau4thewin</h1>
-      <SearchBar />
+      <SearchBar onSearch={onSearch}/>
       <ul>
         <li>
           <Link href="/" legacyBehavior>

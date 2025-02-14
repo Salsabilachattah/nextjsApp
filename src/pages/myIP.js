@@ -3,30 +3,24 @@ import IpPannel from '../components/IpPannel.js';
 import Footer from '../components/Footer.js';
 import Navbar from '../components/Navbar.js';
 import './styles.css';
-const handleFetchIpData = async (setIpData) => {
+const handleFetchIpData = async (setIpData , ip='') => {
   try {
-    const response = await fetch(`/api/ipfy`);
+    const response = await fetch(`/api/ipfy?ip=${ip}`);
     const data = await response.json();
     setIpData(data);
   } catch (error) {
     console.error('Error fetching location:', error);
   }
 };
-const handleSearchIpData = async (setIpData, ipAddress) => {
-  try {
-    const response = await fetch(`/api/ipfy?ip=${ipAddress}`);
-    const data = await response.json();
-    setIpData(data);
-  } catch (error) {
-    console.error('Error fetching location:', error);
-  }
-};
+
 export default function MyIP() {
   const [IpData, setIpData] = useState('');
   useEffect(() => {
     handleFetchIpData(setIpData);
   }, []);
-
+ const handleSearch = (ip) => {
+    handleFetchIpData(setIpData, ip);
+  };
   console.log(IpData);
   const Data = [];
   Data[0] = IpData.ip;  // The api offers a lot more ,  but I only kept these to keep it simple :)
@@ -37,13 +31,13 @@ export default function MyIP() {
   Data[4] = IpData.location.timezone;
   }
   else {
-    Data[2] = 'Failed to fetch data';
-    Data[3] = 'Failed to fetch data';
-    Data[4] = 'Failed to fetch data';
+    Data[2] = '';
+    Data[3] = '';
+    Data[4] = '';
   }
   return (
     <div className="home-page-container">
-      <Navbar />
+      <Navbar onSearch={handleSearch}/>
       <IpPannel data={Data } />
       <Footer />
     </div>

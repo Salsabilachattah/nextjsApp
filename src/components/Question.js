@@ -9,12 +9,11 @@ return (
     <h4>Yes I will open your camera and see what you’re doing when , so send me my money before I get mad </h4>
      </div>
      <div className="question">
-    <h1>Questions2</h1>
-    <h4>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </h4>
-     </div>
+    <h1>How can I hide my Ip Address </h1>
+<h4>You can’t . However , you can use a VPN - which most people think will hide your identity- but in fact it will not . </h4>    </div>
      <div className="question">
-    <h1>Questions3</h1>
-    <h4>lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum </h4>
+    <h1>Why do I need to know my Ip address ?</h1>
+<h4>You actually don’t . I only made this for fun and to learn react . I just thought why not do something I love while learning something new .</h4>
      </div>
 
     </div>
