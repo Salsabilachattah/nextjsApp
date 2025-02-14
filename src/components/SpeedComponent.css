@@ -1,0 +1,30 @@
+.speed-panel {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    width: 13rem;
+    margin-right: 0rem;
+}
+
+.speed-panel h2 {
+color:#006A67;
+}
+.circle {
+    
+    height : 13rem ;
+    width: 13rem;
+    background: #FDDEE5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : #C87286;
+    gap:0.7rem;
+}
+.circle h1{
+    font-size: 5rem;
+}
+.circle h4 {
+    font-size: 1.4rem;
+}

@@ -1,0 +1,49 @@
+/* Navbar container */
+.navbar-container {
+    display: flex;
+    flex-direction: row; /* Stack items vertically */
+    justify-content: space-between; /* Space out elements */
+    align-items: center; /* Vertically align items */
+    background-color: white; /* White background */
+    padding-left: 2rem;
+    width: 100%;
+  }
+  
+  /* Logo styling */
+  .navbar-container h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color:  #006A67; /* Green color for the logo */
+  }
+  
+  
+  /* Navigation links container */
+  .navbar-container ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 1rem;
+    display: flex; /* Display the items in a row */
+    text-decoration: none;
+  }
+  
+  .navbar-container a {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 140%;
+    text-decoration: none;
+    cursor: pointer; /* Pointer cursor on hover */
+    color:  #006A67; /* Green color for navigation items */
+  }
+  
+  .navbar-container a:hover {
+    font-weight: bold;
+    
+  }
+  
+  .navbar-container a :first-child {
+    margin-left: 0; /* Remove margin for the first item */
+    text-decoration: none;
+
+  }
+  
+ 
+  

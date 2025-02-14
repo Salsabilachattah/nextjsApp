@@ -1,0 +1,44 @@
+* {
+font-family:monospace;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+.outer-speed-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.speed-container {
+display: flex;
+flex-direction: row;
+justify-content: center;
+gap: 10rem;
+}
+
+.bandwidth {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 8rem;
+    
+}
+.bandwidth h3 {
+    font-size:1.5rem ;
+   padding-bottom: 4rem;
+}
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    text-align: center; /* Ensures text is centered */
+}

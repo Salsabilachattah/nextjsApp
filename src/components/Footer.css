@@ -1,0 +1,35 @@
+/* Footer.css */
+.footer {
+    /* height: 5rem; */
+    background-color: #006A67; /* Dark background color */
+    color: white; /* White text color */
+    text-align: center; /* Center text */
+    width: 100%; /* Full width */
+    padding-top: 1.4rem;
+    /* padding: 20px 0; Add padding around the footer */
+    font-family: Arial, sans-serif; /* Use a simple font */
+  }
+  
+  .footer p {
+    margin: 0; /* Remove default margin */
+    font-size: 14px; /* Set a smaller font size */
+    color : white; 
+    -webkit-text-stroke: 0px; /* 2px is the stroke width, and black is the stroke color */
+ }
+  
+  .social-icons {
+    margin-top: 10px; /* Add space above the icons */
+  }
+  
+  .social-icons a {
+    margin: 0 10px; /* Space out the icons */
+    color: white; /* Set icon color to white */
+    font-size: 24px; /* Make icons bigger */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+ img { 
+    width: 2%;
+  }
+

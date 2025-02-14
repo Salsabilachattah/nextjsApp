@@ -1,0 +1,57 @@
+.ip-panel {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 1.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+.ip-panel h2 {
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.ip-panel p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FDDEE5; /* Pink */
+  -webkit-text-stroke: 0.3px #C87286; /* 2px is the stroke width, and black is the stroke color */
+  display: inline-block;
+  border-radius: 1rem;
+}
+
+.ip-panel ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+}
+
+.ip-panel ul li {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  font-size: 1rem;
+  color: #333;
+  padding: 1.3rem 0;
+  border-bottom: 0.1rem solid #ddd;
+}
+
+.ip-panel ul li:last-child {
+  border-bottom: none;
+}
+
+.ip-panel ul li strong {
+  color: #006A67; 
+  flex: 1;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.ip-panel ul li span {
+  flex: 1;
+  text-align: right;
+  color: #006A67; 
+  font-size: 1.3rem;
+}
