@@ -8,6 +8,7 @@ import './styles.css';
 const handleSpeedData = async (setSpeedData) => {
   try {
     const response = await fetch('/api/speedTest');
+    console.log(response);
     const data = await response.json();
     setSpeedData([data.uploadSpeed, data.downloadSpeed]);
   } catch (e) {

@@ -1,28 +1,27 @@
 const FastSpeedtest = require("fast-speedtest-api");
-   
-const myPromise = fastnetApi();
-myPromise.then(res =>{
-  console.log('it returned:', res);
-  return res 
-})
 
-function fastnetApi() {
+export default async function handler(req, res) {
+    const token = process.env.token_speedtest;
 
-    let speedtest = new FastSpeedtest({
-        token: "YOUR-TOKEN(CAN BE FOUND IN THE GITHUB DOC)", //**** required
-        verbose: false, // default: false
-        timeout: 5000, // default: 5000
-        https: true, // default: true
+    if (!token) {
+        return res.status(500).json({ error: 'API token is missing' });
+    }
+
+    const speedtest = new FastSpeedtest({
+        token: token, 
+        verbose: true, // default: false
+        timeout: 5000, 
+        https: true, 
         urlCount: 5, // default: 5 
         bufferSize: 8, // default: 8 
         unit: FastSpeedtest.UNITS.Mbps // default: Bps
     });
-
-    return speedtest.getSpeed().then(s => {
-        console.log(`Speed: ${s} Mbps`);
-    console.log(typeof s)
-    return s;
-    }).catch(e => {
-        console.error(e.message);
-    });
+    try {
+        const speed = await speedtest.getSpeed();
+        // console.log(`Speed: ${speed} Mbps`);
+        res.status(200).json({ speed });
+    } catch (error) {
+        console.error(error.message);
+        res.status(500).json({ error: error.message });
+    }
 }
