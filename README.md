@@ -21,5 +21,5 @@ The website was mainly developped to show you your public ip address as well as 
 - I used [https://geo.ipify.org/docs](ipify) for getting both personnal ip address and searched ip address relative information .
 - I am still looking for a public internet speed API , if you know any , please contact me .
 
-## Contact
+## Contact me
 using this email address : ms_chattah@esi.dz
