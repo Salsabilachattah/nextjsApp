@@ -1,8 +1,12 @@
 This is my first [Next.js](https://nextjs.org) web application
 
 ## To run the app locally
-- First , add your API_KEY to .env
-- Next, build the app and run the development server:
+- First , create a .env file and add your API_KEY to it
+- Next , install dependencies using :
+```bash 
+npm install
+```
+- Next, build the app and run the development server using these commands
 ```bash
 npm run build
 npm run dev
