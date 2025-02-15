@@ -4,7 +4,7 @@ import './Footer.css';
 export default function Footer() {
 return (
     <div className="footer">
-            <p>© 2021 Reseau4TheWin</p>
+            <p>You can contact me via</p>
             <div className="social-icons">
                     <a className="icon" href="https://github.com/Salsabilachattah/" >
                             <img src='/icons8-github-50.png' alt="github" />
