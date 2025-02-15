@@ -23,7 +23,7 @@ The website was mainly developed to show you your public ip address as well as s
 ## used public APIs
 
 - I used [https://geo.ipify.org/docs](ipify) for getting both personnal ip address and searched ip address relative information .
-- I used netflix's [https://fast.com/fr/](https://fast.com/fr/) AIP for internet speed test .
+- I used netflix's [https://fast.com/fr/](https://fast.com/fr/) API for internet speed test .
 
 ## Deployment
 This project was deployed with vercel , you can visit it via this link : [https://nextjs-app-theta-nine.vercel.app/](https://nextjs-app-theta-nine.vercel.app/)
