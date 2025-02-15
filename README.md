@@ -11,7 +11,8 @@ npm install
 npm run build
 npm run dev
 ```
-- Open [http://localhost:3000](http://localhost:3000) with your browser to test the application 
+- Open [http://localhost:3000](http://localhost:3000) with your browser to test the application
+- Or you can just visit this link : [https://nextjs-app-theta-nine.vercel.app/](https://nextjs-app-theta-nine.vercel.app/)
 
 ## What functionnalities does the website offer ?
 
@@ -26,7 +27,7 @@ The website was mainly developped to show you your public ip address as well as 
 - I am still looking for a better public internet speed API , if you know any , please contact me .
 
 ## Deployment
-Yet to work on
+This project was deployed with vercel , but it is still under maintenance
 
 ## Contact me
 using this email address : ms_chattah@esi.dz
